@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff7c9;
+    color:#191939;
+    font-family: "Cormorant Garamond";
+    flex-direction: column;
+    display: flex;
+    background: linear-gradient(135deg,#ecb44d,#f2e199,#6fb8e6,#1b3a68);
+    background-size: 300% 300%;
+    animation: serene 10s ease-in-out infinite;
+}
+@keyframes serene{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+nav{
+    display:flex;
+    width:100%;
+    padding: 24px 32px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+nav ul{
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+nav ul li a{
+    color:#1f4072;
+    padding: 4px 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out,opacity 0.3s ease;
+}
+nav ul li a:hover{
+    transform:translateY(-6px);
+    opacity:0.8;
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 24px 48px;
+    max-width: 950px;
+    margin: 0 auto;
+    width:90%;
+    animation: skill 0.9s ease-out forwards;
+}
+@keyframes skill{
+    from{
+        opacity: 0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.content h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.content .subtitle{
+    font-size: 2.8rem;
+    font-style: italic;
+    color:#3b5b8c;
+    margin-bottom: 36px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    margin-bottom: 48px;
+}
+.skills div{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background: rgba(225,225,225,0.4);
+    border:2px solid rgba(31,64,114,0.2);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:14px;
+    text-align: center;
+    animation: gentle 4s ease-in-out infinite;
+    transition: transform 0.3s ease, background 0.3s ease,box-shadow 0.3s ease;
+}
+.skills div:hover{
+    transform: translateY(-10px);
+    background-color: rgba(225,225,225,0.8);
+    box-shadow: 0 10px 24px rgba(225,225,225,0.8);
+    border-color:#1f4072;
+}
+.skills b{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:#1f4072;
+    margin-bottom: 4px;
+}
+.skills small{
+    font-size:1rem;
+    font-style:italic;
+    color:#3f5a82;
+}
+@keyframes gentle{
+    0%{transform:translateY(0px);}
+    100%{transform: translateY(-6px);}
+}
+.projects{
+    width: 100%;
+    max-width: 650px;
+}
+.projects h2{
+    font-size: 10rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color:#1f4072
+}
+.projects article{
+    background-color: rgba(225,225,225,0.4);
+    border:1px solid rgba(31,64,114,0.2);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease,box-shadow 0.3s ease,background 0.3s ease;
+}
+.projects article:hover{
+    transform: translateY(-6px);
+    background: rgba(225,225,225,0.8);
+    box-shadow: 0 14px 28px rgba(31,64,114,0.2);
+}
+.projects em{
+    display: inline-block;
+    background-color: #1f4072;
+    color:#fff7c9;
+    font-size:0.8;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+.projects h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:#1f4072;
+}
+.projects p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color:#1b3a68;
+    margin-bottom: 18px;
+}
+.projects article div{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.projects article span{
+    font-size: 0.9rem;
+    background-color: rgba(31,64,114,0.08);
+    border: 1px solid rgba(31,64,114,0.2);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    color:#1f4072;
+}
