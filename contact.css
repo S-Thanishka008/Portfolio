@@ -106,6 +106,7 @@ nav ul li a:hover{
     color: #1f4072;
     backdrop-filter: blur(6px);
     text-align: left;
+    margin-bottom: 30px;
     transition: transform 0.3s ease, background 0.3s ease,box-shadow 0.3s ease;
 }
 .card:hover{
@@ -118,12 +119,20 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .label{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #1f4072;
+    transition: color 0.3s ease;
 }
 .detail{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color:#1b3a68;
     font-style: italic;
+    transition: color 0.3s ease;
+}
+.label:hover{
+    color: #f2e199;
+}
+.detail:hover{
+    color: #f2e199;
 }
