@@ -121,7 +121,7 @@ nav ul li a:hover{
 .label{
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1f4072;
+    color: #f2e199;
     transition: color 0.3s ease;
 }
 .detail{
@@ -129,9 +129,6 @@ nav ul li a:hover{
     color:#1b3a68;
     font-style: italic;
     transition: color 0.3s ease;
-}
-.label:hover{
-    color: #f2e199;
 }
 .detail:hover{
     color: #f2e199;
