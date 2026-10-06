@@ -77,12 +77,12 @@ nav ul li a:hover{
     }
 }
 .title{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 6px;
 }
 .subtitle{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     font-style: italic;
     color: #1f4072;
@@ -119,13 +119,13 @@ nav ul li a:hover{
     flex-direction: column;
 }
 .label{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #f2e199;
     transition: color 0.3s ease;
 }
 .detail{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color:#1b3a68;
     font-style: italic;
     transition: color 0.3s ease;
