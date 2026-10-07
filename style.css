@@ -65,6 +65,8 @@ nav ul li a:hover{
     align-items: center;
     padding: 24px;
     max-width: 850px;
+}
+main{
     animation: content 0.9s ease-out forwards;
 }
 @keyframes content{
