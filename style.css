@@ -6,15 +6,15 @@
 }
 body{
     min-height: 100vh;
-    background-color: #fff7c9;
-    color:#191939;
-    font-family: "Cormorant Garamond";
+    background-color: #060a14;
+    color: #191919;
+    font-family: "Cormorant Garamond" , serif;
     flex-direction: column;
     display: flex;
     background: linear-gradient(135deg,#ecb44d,#f2e199,#6fb8e6,#1b3a68);
     background-size: 300% 300%;
     animation: serene 10s ease-in-out infinite;
-    transition: transform 0.3s ease,background 0.3s ease,box-shadow 0.3s ease
+    transition: transform 0.3s ease,background 0.3s ease,box-shadow 0.3s ease;
 }
 @keyframes serene{
     0%{
@@ -50,7 +50,7 @@ nav ul li a{
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease-in-out,opacity 0.3s ease;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 nav ul li a:hover{
     transform:translateY(-6px);
@@ -80,15 +80,15 @@ main{
         transform: translateY(0);
     }
 }
-.name{
+.name {
     font-weight: 300;
-    font-size: 5rem;
-    line-height: 3;
-    margin-bottom: 4px;
-    letter-spacing: 1px;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
 }
 .content p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 2;
     font-weight: 700;
     font-style: italic;
